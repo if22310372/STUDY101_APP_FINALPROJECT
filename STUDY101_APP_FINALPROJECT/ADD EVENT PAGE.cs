@@ -41,6 +41,19 @@ namespace STUDY101_APP_FINALPROJECT
 
             // Mengatur nilai DateTimePicker
             datepick.Value = eventDate;
+
+            koneksi.Open();
+            query = "SELECT DISTINCT calender_event FROM tbl_tracker"; // Ambil nilai unik
+            perintah = new MySqlCommand(query, koneksi);
+            MySqlDataReader reader = perintah.ExecuteReader();
+
+            checkedListBoxevent.Items.Clear(); // Kosongkan sebelumnya
+
+            while (reader.Read())
+            {
+                // Tambahkan type ke combobox
+                checkedListBoxevent.Items.Add(reader["calender_event"].ToString());
+            }
         }
 
         private void btnadd_Click(object sender, EventArgs e)

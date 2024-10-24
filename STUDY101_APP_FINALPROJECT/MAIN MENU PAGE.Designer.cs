@@ -88,6 +88,7 @@
             this.btncalender.TabIndex = 17;
             this.btncalender.Text = "Calender";
             this.btncalender.UseVisualStyleBackColor = false;
+            this.btncalender.Click += new System.EventHandler(this.btncalender_Click);
             // 
             // btnbrainhack
             // 
@@ -155,7 +156,7 @@
             this.Controls.Add(this.btnprofile);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblwelcome);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MAIN_MENU_PAGE";
             this.Text = "MAIN_MENU_PAGE";
             this.Load += new System.EventHandler(this.MAIN_MENU_PAGE_Load);

@@ -33,6 +33,7 @@
             this.lblevent = new System.Windows.Forms.Label();
             this.btnadd = new System.Windows.Forms.Button();
             this.datepick = new System.Windows.Forms.DateTimePicker();
+            this.checkedListBoxevent = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // txtevent
@@ -91,12 +92,21 @@
             this.datepick.Size = new System.Drawing.Size(401, 21);
             this.datepick.TabIndex = 12;
             // 
+            // checkedListBoxevent
+            // 
+            this.checkedListBoxevent.FormattingEnabled = true;
+            this.checkedListBoxevent.Location = new System.Drawing.Point(541, 46);
+            this.checkedListBoxevent.Name = "checkedListBoxevent";
+            this.checkedListBoxevent.Size = new System.Drawing.Size(405, 169);
+            this.checkedListBoxevent.TabIndex = 13;
+            // 
             // ADD_EVENT_PAGE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(484, 261);
+            this.ClientSize = new System.Drawing.Size(1001, 261);
+            this.Controls.Add(this.checkedListBoxevent);
             this.Controls.Add(this.datepick);
             this.Controls.Add(this.btnadd);
             this.Controls.Add(this.lblevent);
@@ -117,5 +127,6 @@
         private System.Windows.Forms.Label lblevent;
         private System.Windows.Forms.Button btnadd;
         private System.Windows.Forms.DateTimePicker datepick;
+        private System.Windows.Forms.CheckedListBox checkedListBoxevent;
     }
 }

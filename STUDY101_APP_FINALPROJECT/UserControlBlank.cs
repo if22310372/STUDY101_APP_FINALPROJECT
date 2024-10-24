@@ -16,5 +16,10 @@ namespace STUDY101_APP_FINALPROJECT
         {
             InitializeComponent();
         }
+
+        private void UserControlBlank_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -60,6 +60,12 @@
     <Compile Include="CALENDER PAGE.Designer.cs">
       <DependentUpon>CALENDER PAGE.cs</DependentUpon>
     </Compile>
+    <Compile Include="DIARY PAGE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DIARY PAGE.Designer.cs">
+      <DependentUpon>DIARY PAGE.cs</DependentUpon>
+    </Compile>
     <Compile Include="LOGIN PAGE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,12 @@
     <Compile Include="SIGNUP PAGE.Designer.cs">
       <DependentUpon>SIGNUP PAGE.cs</DependentUpon>
     </Compile>
+    <Compile Include="TRACKER PAGE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRACKER PAGE.Designer.cs">
+      <DependentUpon>TRACKER PAGE.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlBlank.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -108,6 +120,9 @@
     <EmbeddedResource Include="CALENDER PAGE.resx">
       <DependentUpon>CALENDER PAGE.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DIARY PAGE.resx">
+      <DependentUpon>DIARY PAGE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LOGIN PAGE.resx">
       <DependentUpon>LOGIN PAGE.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SIGNUP PAGE.resx">
       <DependentUpon>SIGNUP PAGE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRACKER PAGE.resx">
+      <DependentUpon>TRACKER PAGE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlBlank.resx">
       <DependentUpon>UserControlBlank.cs</DependentUpon>

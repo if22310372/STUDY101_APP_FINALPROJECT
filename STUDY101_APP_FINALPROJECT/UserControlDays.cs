@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,15 +8,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+
 
 namespace STUDY101_APP_FINALPROJECT
 {
     public partial class UserControlDays : UserControl
     {
+        private MySqlConnection koneksi;
+        private MySqlDataAdapter adapter;
+        private MySqlCommand perintah;
+        private DataSet ds = new DataSet();
+        private string alamat, query;
+
         public static int static_day;
 
         public UserControlDays()
         {
+            alamat = "server=localhost; database=database_study101; username=root; password=;";
+            koneksi = new MySqlConnection(alamat);
+
             InitializeComponent();
         }
 
@@ -47,5 +60,8 @@ namespace STUDY101_APP_FINALPROJECT
             ADD_EVENT_PAGE AddEventPage = new ADD_EVENT_PAGE();
             AddEventPage.Show();
         }
+
+        
     }
 }
+
